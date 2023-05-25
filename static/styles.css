@@ -12,8 +12,8 @@ html, body {
 
 body {
     box-sizing: border-box;
+    overflow: hidden;
     padding: 0 2rem;
-    overflow: auto;
     margin: 0;
 
     font-family: "JetBrains Mono", monospace;
