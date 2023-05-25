@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Construction from "../../lib/components/construction.svelte";
     import Navbar from "../../lib/components/navbar.svelte";
 </script>
 
@@ -7,3 +8,5 @@
 <main>
     <h1>Skills</h1>
 </main>
+
+<Construction />
