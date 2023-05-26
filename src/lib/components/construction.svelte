@@ -12,39 +12,32 @@
     .construction-notice {
         position: absolute;
 
+        display: flex;
+        flex-flow: column;
+
         transform: translate(-50%, -50%);
         left: 75%;
         top: 75%;
     }
 
-    .construction-notice h1, p {
-        position: relative;
+    .construction-notice h1, p, a {
         text-align: center;
     }
 
-    .construction-notice h1::before {
-        display: inline-block;
-        position: absolute;
-        content: "🔨";
-        left: 2.45rem;
-        top: -0.65rem;
-        scale: -1 1;
+    .construction-notice a {
+        background-color: rgb(24, 24, 24);
+        color: rgb(248, 248, 248);
+        text-decoration: none;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        padding: 0.5rem;
 
-        animation: 2s hammer-swing 500ms infinite;
+        transition: color 300ms ease-in, background-color 300ms ease-in;
     }
 
-    @keyframes hammer-swing {
-        from {
-            transform: rotateZ(0deg);
-        }
-
-        50% {
-            transform: rotateZ(45deg);
-        }
-
-        to {
-            transform: rotateZ(0deg);
-        }
+    .construction-notice a:hover {
+        background-color: rgb(28, 28, 28);
+        color: rgb(245, 177, 75);
     }
 </style>
 
@@ -52,5 +45,6 @@
     <div class="construction-notice">
         <h1>Under Construction 🚧🏗️</h1>
         <p>This page is under construction and is not yet implemented.</p>
+        <a href="/">Go Home</a>
     </div>
 </div>

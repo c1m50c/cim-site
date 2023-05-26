@@ -3,5 +3,16 @@
     import Navbar from "../lib/components/navbar.svelte";
 </script>
 
+<style>
+    main {
+        margin-top: 3rem;
+    }
+</style>
+
 <Navbar />
-<Construction />
+
+<main>
+    <section id="welcome">
+        <h1>Welcome!</h1>
+    </section>
+</main>
